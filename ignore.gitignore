@@ -1,2 +1,0 @@
-#list files.ext to be ignored, or !files.ext to not-ignore
-*.xcodeproj
