@@ -40,7 +40,8 @@
 - (double)performOperation:(NSString *)operation
 {
     [self.programStack addObject:operation];
-    return [[self class] runProgram:self.program];
+    return [[self class] runProgram:self.program
+                         usingVariableValues:@"an NSdict..."];
 }
 
 + (double)popOperandOffProgramStack:(NSMutableArray *)stack
@@ -87,12 +88,18 @@
 }
 
 + (double)runProgram:(id)program
+ usingVariableValues:(NSDictionary *)variableValues
 {
     NSMutableArray *stack;
     if ([program isKindOfClass:[NSArray class]]) {
         stack = [program mutableCopy];
     }
     return [self popOperandOffProgramStack:stack];
+}
+
++ (NSSet *)variablesUsedInProgram:(id)program
+{
+    return ...?;
 }
 
 @end
