@@ -4,7 +4,7 @@
 //
 //  Created by Richard Nutley on 2/9/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
+//  "Delete this comment. 2/28/12"
 
 #import <Foundation/Foundation.h>
 
