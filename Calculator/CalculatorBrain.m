@@ -78,7 +78,7 @@
         } else if ([operation isEqualToString:@"sqrt"]) {
             result = sqrt([self popOperandOffProgramStack:stack]);
         } else if ([operation isEqualToString:@"π"]) {
-            result = 355.0/113.0;
+            result = M_PI;
         } else if ([operation isEqualToString:@"C"]) {
             [stack removeAllObjects];
         }
